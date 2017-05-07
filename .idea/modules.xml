@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../HackySack/HackySack.iml" filepath="$PROJECT_DIR$/../HackySack/HackySack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../HackySack/HackySackMain.iml" filepath="$PROJECT_DIR$/../HackySack/HackySackMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../JavaFXTest/JavaFXTest2.iml" filepath="$PROJECT_DIR$/../JavaFXTest/JavaFXTest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/JoesPersonalProject.iml" filepath="$PROJECT_DIR$/JoesPersonalProject.iml" />
     </modules>
   </component>

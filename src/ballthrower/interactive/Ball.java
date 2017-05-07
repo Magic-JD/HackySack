@@ -21,7 +21,7 @@ public class Ball extends Circle {
     public static final double BOUNCE_SLOW = 0.8;
     private Pane pane;
     private Color paint;
-    private int radius;
+    private double radius;
     private double xVelocity;
     private double yVelocity;
     private double gravity;
@@ -46,10 +46,10 @@ public class Ball extends Circle {
     public Ball(String s, Pane pane) {
         this.pane = pane;
         String[] components = s.split(" ");
-        int x = Integer.parseInt(components[0]);
-        int y = radiusProperty().intValue();
+        double y = Double.parseDouble(components[0]);
+        double x = radiusProperty().doubleValue();
         paint = Color.color(Float.parseFloat(components[1]), Float.parseFloat(components[2]), Float.parseFloat(components[3]));
-        this.radius = Integer.parseInt(components[4]);
+        this.radius = Double.parseDouble(components[4]);
         this.xVelocity = Double.parseDouble(components[5]);
         this.yVelocity = Double.parseDouble(components[6]);
         this.gravity = Double.parseDouble(components[7]);
@@ -57,7 +57,7 @@ public class Ball extends Circle {
         init(x, y);
     }
 
-    private void init(int x, int y){
+    private void init(double x, double y){
         setCenterX(x);
         setCenterY(y);
         setRadius(radius);
@@ -132,7 +132,7 @@ public class Ball extends Circle {
     }
 
     public boolean offScreen() {
-        return getCenterY() >= WIDTH - radius;
+        return getCenterX() >= WIDTH - radius;
     }
 
     @Override
